@@ -2213,6 +2213,52 @@ paja@paja-trb.cz
 <rectangle x1="-2.8448" y1="-0.3048" x2="-2.2352" y2="0.3048" layer="51"/>
 <rectangle x1="2.2432" y1="-0.3048" x2="2.8528" y2="0.3048" layer="51"/>
 </package>
+<package name="S1G4_JUM">
+<wire x1="-2.544" y1="1.016" x2="-2.29" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-2.544" y1="1.016" x2="-2.798" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-2.544" y1="-1.016" x2="-2.29" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-2.544" y1="-1.016" x2="-2.798" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-2.798" y1="-1.27" x2="-4.83" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-5.084" y1="-1.016" x2="-4.83" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-0.258" y1="-1.27" x2="-0.004" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="-0.258" y1="-1.27" x2="-2.29" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-0.258" y1="1.27" x2="-0.004" y2="1.016" width="0.127" layer="21"/>
+<wire x1="-0.258" y1="1.27" x2="-2.29" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-2.798" y1="1.27" x2="-4.83" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-5.084" y1="1.016" x2="-4.83" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-5.084" y1="1.016" x2="-5.084" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="-2.544" y1="0.954" x2="-2.544" y2="-0.954" width="0.127" layer="21"/>
+<wire x1="2.544" y1="1.016" x2="2.798" y2="1.27" width="0.127" layer="21"/>
+<wire x1="2.544" y1="1.016" x2="2.29" y2="1.27" width="0.127" layer="21"/>
+<wire x1="2.544" y1="-1.016" x2="2.798" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="2.544" y1="-1.016" x2="2.29" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="2.29" y1="-1.27" x2="0.258" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="0.004" y1="-1.016" x2="0.258" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="4.83" y1="-1.27" x2="5.084" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="4.83" y1="-1.27" x2="2.798" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="5.084" y1="-1.016" x2="5.084" y2="1.016" width="0.127" layer="21"/>
+<wire x1="4.83" y1="1.27" x2="5.084" y2="1.016" width="0.127" layer="21"/>
+<wire x1="4.83" y1="1.27" x2="2.798" y2="1.27" width="0.127" layer="21"/>
+<wire x1="2.29" y1="1.27" x2="0.258" y2="1.27" width="0.127" layer="21"/>
+<wire x1="0.004" y1="1.016" x2="0.258" y2="1.27" width="0.127" layer="21"/>
+<wire x1="0.004" y1="1.016" x2="0.004" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="2.544" y1="0.954" x2="2.544" y2="-0.954" width="0.127" layer="21"/>
+<circle x="-3.81" y="0" radius="0.449" width="0.127" layer="102"/>
+<circle x="-1.27" y="0" radius="0.449" width="0.127" layer="102"/>
+<circle x="1.27" y="0" radius="0.449" width="0.127" layer="102"/>
+<circle x="3.81" y="0" radius="0.449" width="0.127" layer="102"/>
+<pad name="1" x="-3.81" y="0" drill="0.8128" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="2" x="-1.27" y="0" drill="0.8128" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="3" x="1.27" y="0" drill="0.8128" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="4" x="3.81" y="0" drill="0.8128" diameter="1.778" shape="octagon" rot="R90"/>
+<text x="-2.858" y="1.492" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.335" y="-2.762" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-0.159" y="-0.795" size="0.254" layer="100" rot="R90">PaJa</text>
+<rectangle x1="-1.5788" y1="-0.3048" x2="-0.9692" y2="0.3048" layer="51"/>
+<rectangle x1="-4.1188" y1="-0.3048" x2="-3.5092" y2="0.3048" layer="51"/>
+<rectangle x1="3.5092" y1="-0.3048" x2="4.1188" y2="0.3048" layer="51"/>
+<rectangle x1="0.9692" y1="-0.3048" x2="1.5788" y2="0.3048" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CAN-9V">
@@ -2324,6 +2370,23 @@ paja@paja-trb.cz
 <pin name="2" x="0" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R90"/>
 <pin name="3" x="2.54" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
+<symbol name="S1G4">
+<wire x1="2.54" y1="3.81" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="5.08" y1="3.81" x2="5.08" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="-3.81" y1="1.27" x2="-3.81" y2="5.08" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="3.81" x2="0" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="-2.54" y1="3.81" x2="-2.54" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="6.35" y1="5.08" x2="-3.81" y2="5.08" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-3.81" y1="1.27" x2="6.35" y2="1.27" width="0.254" layer="94" style="shortdash"/>
+<wire x1="6.35" y1="5.08" x2="6.35" y2="1.27" width="0.254" layer="94" style="shortdash"/>
+<text x="6.0325" y="1.5875" size="0.254" layer="100" rot="R90">PaJa</text>
+<text x="8.0962" y="0.7937" size="1.4224" layer="96" rot="R90">&gt;VALUE</text>
+<text x="-4.445" y="1.1112" size="1.4224" layer="95" rot="R90">&gt;Part</text>
+<pin name="1" x="-2.54" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="2" x="0" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="3" x="2.54" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="4" x="5.08" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CAN_9V" prefix="CAN">
@@ -2397,6 +2460,25 @@ paja@paja-trb.cz
 <connect gate="JUMP" pin="1" pad="1"/>
 <connect gate="JUMP" pin="2" pad="2"/>
 <connect gate="JUMP" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="S1G4_JUMP" prefix="JUM">
+<description>&lt;B&gt;Radove konektory&lt;/B&gt; - koliky - 4x</description>
+<gates>
+<gate name="JUMP" symbol="S1G4" x="-40.64" y="33.02"/>
+</gates>
+<devices>
+<device name="" package="S1G4_JUM">
+<connects>
+<connect gate="JUMP" pin="1" pad="1"/>
+<connect gate="JUMP" pin="2" pad="2"/>
+<connect gate="JUMP" pin="3" pad="3"/>
+<connect gate="JUMP" pin="4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3519,6 +3601,7 @@ Source: www.cypressindustries.com</description>
 <part name="FRAME2" library="frames" deviceset="A4L-LOC" device=""/>
 <part name="IC8" library="atmel" deviceset="ATMEGA644" device="A"/>
 <part name="JUM1" library="#PaJa_konektory" deviceset="S1G3_JUMP" device=""/>
+<part name="JUM2" library="#PaJa_konektory" deviceset="S1G4_JUMP" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3553,7 +3636,8 @@ RS485 -&gt; 5TTL</text>
 <instance part="C6" gate="C" x="165.1" y="162.56" rot="R90"/>
 <instance part="U$1" gate="G$1" x="231.14" y="162.56" rot="R270"/>
 <instance part="IC8" gate="G$1" x="111.76" y="106.68"/>
-<instance part="JUM1" gate="JUMP" x="170.18" y="139.7"/>
+<instance part="JUM1" gate="JUMP" x="182.88" y="124.46"/>
+<instance part="JUM2" gate="JUMP" x="149.86" y="144.78" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -3661,9 +3745,9 @@ RS485 -&gt; 5TTL</text>
 </segment>
 <segment>
 <pinref part="JUM1" gate="JUMP" pin="1"/>
-<wire x1="167.64" y1="137.16" x2="167.64" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="134.62" x2="162.56" y2="134.62" width="0.1524" layer="91"/>
-<label x="162.56" y="134.62" size="1.016" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
+<wire x1="180.34" y1="121.92" x2="180.34" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="119.38" x2="175.26" y2="119.38" width="0.1524" layer="91"/>
+<label x="175.26" y="119.38" size="1.016" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -3735,9 +3819,9 @@ RS485 -&gt; 5TTL</text>
 </segment>
 <segment>
 <pinref part="JUM1" gate="JUMP" pin="3"/>
-<wire x1="162.56" y1="129.54" x2="172.72" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="129.54" x2="172.72" y2="137.16" width="0.1524" layer="91"/>
-<label x="162.56" y="129.54" size="1.016" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
+<wire x1="175.26" y1="114.3" x2="185.42" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="114.3" x2="185.42" y2="121.92" width="0.1524" layer="91"/>
+<label x="175.26" y="114.3" size="1.016" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="AREF" class="0">
@@ -3950,14 +4034,42 @@ RS485 -&gt; 5TTL</text>
 <net name="PA7" class="0">
 <segment>
 <pinref part="JUM1" gate="JUMP" pin="2"/>
-<wire x1="170.18" y1="137.16" x2="170.18" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="170.18" y1="132.08" x2="162.56" y2="132.08" width="0.1524" layer="91"/>
-<label x="162.56" y="132.08" size="1.016" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
+<wire x1="182.88" y1="121.92" x2="182.88" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="116.84" x2="175.26" y2="116.84" width="0.1524" layer="91"/>
+<label x="175.26" y="116.84" size="1.016" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="IC8" gate="G$1" pin="(PCINT7/ADC7)PA7"/>
 <wire x1="137.16" y1="149.86" x2="142.24" y2="149.86" width="0.1524" layer="91"/>
 <label x="142.24" y="149.86" size="1.016" layer="95" font="vector" ratio="10" xref="yes"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="IC8" gate="G$1" pin="(PCINT6/ADC6)PA6"/>
+<pinref part="JUM2" gate="JUMP" pin="1"/>
+<wire x1="147.32" y1="147.32" x2="137.16" y2="147.32" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="IC8" gate="G$1" pin="(PCINT5/ADC5)PA5"/>
+<pinref part="JUM2" gate="JUMP" pin="2"/>
+<wire x1="147.32" y1="144.78" x2="137.16" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="IC8" gate="G$1" pin="(PCINT4/ADC4)PA4"/>
+<pinref part="JUM2" gate="JUMP" pin="3"/>
+<wire x1="147.32" y1="142.24" x2="137.16" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="IC8" gate="G$1" pin="(PCINT3/ADC3)PA3"/>
+<pinref part="JUM2" gate="JUMP" pin="4"/>
+<wire x1="147.32" y1="139.7" x2="137.16" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

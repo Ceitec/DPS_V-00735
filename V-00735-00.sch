@@ -3461,6 +3461,14 @@ Source: www.cypressindustries.com</description>
 <text x="127" y="12.7" size="2.54" layer="94">Ovládání ofuku pres
 RS485 -&gt; 5TTL</text>
 <text x="246.38" y="5.08" size="2.54" layer="94">00</text>
+<text x="165.1" y="139.7" size="1.778" layer="97">Nahradit 78L05-TO92
+Nozky napájet. Bohuzel tento má
+pouze vstup do 16V max.
+Nevsiml jsem si u první verze</text>
+<wire x1="170.18" y1="149.86" x2="170.18" y2="157.48" width="0.1524" layer="97"/>
+<wire x1="170.18" y1="157.48" x2="172.72" y2="160.02" width="0.1524" layer="97"/>
+<wire x1="172.72" y1="160.02" x2="170.18" y2="160.02" width="0.1524" layer="97"/>
+<wire x1="172.72" y1="160.02" x2="172.72" y2="157.48" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
