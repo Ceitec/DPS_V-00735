@@ -291,7 +291,7 @@ Based on the following sources:&lt;p&gt;
 </package>
 </packages>
 <symbols>
-<symbol name="ATMEGA644">
+<symbol name="ATMEGA644P">
 <wire x1="-22.86" y1="45.72" x2="20.32" y2="45.72" width="0.254" layer="94"/>
 <wire x1="20.32" y1="45.72" x2="20.32" y2="-45.72" width="0.254" layer="94"/>
 <wire x1="20.32" y1="-45.72" x2="-22.86" y2="-45.72" width="0.254" layer="94"/>
@@ -301,9 +301,9 @@ Based on the following sources:&lt;p&gt;
 <pin name="(PCINT31/OC2A)PD7" x="25.4" y="-25.4" length="middle" rot="R180"/>
 <pin name="(PCINT30/OC2B/ICP)PD6" x="25.4" y="-27.94" length="middle" rot="R180"/>
 <pin name="(PCINT29/OC1A)PD5" x="25.4" y="-30.48" length="middle" rot="R180"/>
-<pin name="(PCINT28/OC1B)PD4" x="25.4" y="-33.02" length="middle" rot="R180"/>
-<pin name="(PCINT27/INT1)PD3" x="25.4" y="-35.56" length="middle" rot="R180"/>
-<pin name="(PCINT26/INT0)PD2" x="25.4" y="-38.1" length="middle" rot="R180"/>
+<pin name="(PCINT28/XCK1/OC1B)PD4" x="25.4" y="-33.02" length="middle" rot="R180"/>
+<pin name="(PCINT27/TXD1/INT1)PD3" x="25.4" y="-35.56" length="middle" rot="R180"/>
+<pin name="(PCINT26/RXD1/INT0)PD2" x="25.4" y="-38.1" length="middle" rot="R180"/>
 <pin name="(PCINT25/TXD0)PD1" x="25.4" y="-40.64" length="middle" rot="R180"/>
 <pin name="(PCINT24/RXD0)PD0" x="25.4" y="-43.18" length="middle" rot="R180"/>
 <pin name="(PCINT23/TOSC2)PC7" x="25.4" y="-2.54" length="middle" direction="out" rot="R180"/>
@@ -345,14 +345,12 @@ Based on the following sources:&lt;p&gt;
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ATMEGA644" prefix="IC">
-<description>&lt;b&gt;8-bit Microcontroller&lt;/b&gt; with 64K Bytes In-System Programmable Flash&lt;p&gt;
-Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</description>
+<deviceset name="ATMEGA644P">
 <gates>
-<gate name="G$1" symbol="ATMEGA644" x="0" y="0"/>
+<gate name="G$1" symbol="ATMEGA644P" x="0" y="0"/>
 </gates>
 <devices>
-<device name="A" package="TQFP44">
+<device name="" package="TQFP44">
 <connects>
 <connect gate="G$1" pin="(PCINT0/ADC0)PA0" pad="37"/>
 <connect gate="G$1" pin="(PCINT1/ADC1)PA1" pad="36"/>
@@ -373,9 +371,9 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <connect gate="G$1" pin="(PCINT23/TOSC2)PC7" pad="26"/>
 <connect gate="G$1" pin="(PCINT24/RXD0)PD0" pad="9"/>
 <connect gate="G$1" pin="(PCINT25/TXD0)PD1" pad="10"/>
-<connect gate="G$1" pin="(PCINT26/INT0)PD2" pad="11"/>
-<connect gate="G$1" pin="(PCINT27/INT1)PD3" pad="12"/>
-<connect gate="G$1" pin="(PCINT28/OC1B)PD4" pad="13"/>
+<connect gate="G$1" pin="(PCINT26/RXD1/INT0)PD2" pad="11"/>
+<connect gate="G$1" pin="(PCINT27/TXD1/INT1)PD3" pad="12"/>
+<connect gate="G$1" pin="(PCINT28/XCK1/OC1B)PD4" pad="13"/>
 <connect gate="G$1" pin="(PCINT29/OC1A)PD5" pad="14"/>
 <connect gate="G$1" pin="(PCINT3/ADC3)PA3" pad="34"/>
 <connect gate="G$1" pin="(PCINT30/OC2B/ICP)PD6" pad="15"/>
@@ -388,24 +386,19 @@ Source: http://www.atmel.com/dyn/resources/prod_documents/doc2593.pdf</descripti
 <connect gate="G$1" pin="(PCINT9/CLKO/T1)PB1" pad="41"/>
 <connect gate="G$1" pin="AREF" pad="29"/>
 <connect gate="G$1" pin="AVCC" pad="27"/>
-<connect gate="G$1" pin="GND" pad="6"/>
-<connect gate="G$1" pin="GND@1" pad="18"/>
-<connect gate="G$1" pin="GND@2" pad="28"/>
-<connect gate="G$1" pin="GND@3" pad="39"/>
+<connect gate="G$1" pin="GND" pad="39"/>
+<connect gate="G$1" pin="GND@1" pad="28"/>
+<connect gate="G$1" pin="GND@2" pad="18"/>
+<connect gate="G$1" pin="GND@3" pad="6"/>
 <connect gate="G$1" pin="RESET" pad="4"/>
-<connect gate="G$1" pin="VCC" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="38"/>
 <connect gate="G$1" pin="VCC@1" pad="17"/>
-<connect gate="G$1" pin="VCC@2" pad="38"/>
+<connect gate="G$1" pin="VCC@2" pad="5"/>
 <connect gate="G$1" pin="XTAL1" pad="8"/>
 <connect gate="G$1" pin="XTAL2" pad="7"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="ATMEGA644PV-10AU" constant="no"/>
-<attribute name="OC_FARNELL" value="1455123" constant="no"/>
-<attribute name="OC_NEWARK" value="58M3748" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -3456,7 +3449,7 @@ Source: www.cypressindustries.com</description>
 <part name="D4" library="#PaJa_31" deviceset="LED" device="_1206" value="OSTG1206C1A_N"/>
 <part name="R15" library="#PaJa_31" deviceset="R" device="_1206" value="580R"/>
 <part name="FRAME2" library="frames" deviceset="A4L-LOC" device=""/>
-<part name="IC8" library="atmel" deviceset="ATMEGA644" device="A"/>
+<part name="IC8" library="atmel" deviceset="ATMEGA644P" device=""/>
 <part name="JUM1" library="#PaJa_konektory" deviceset="S1G3_JUMP" device=""/>
 <part name="JUM2" library="#PaJa_konektory" deviceset="S1G4_JUMP" device=""/>
 <part name="K1" library="#PaJa_konektory" deviceset="PSH02-04" device="P"/>
@@ -3515,7 +3508,7 @@ RS485 -&gt; 5TTL</text>
 <junction x="187.96" y="68.58"/>
 </segment>
 <segment>
-<pinref part="IC8" gate="G$1" pin="(PCINT28/OC1B)PD4"/>
+<pinref part="IC8" gate="G$1" pin="(PCINT28/XCK1/OC1B)PD4"/>
 <wire x1="137.16" y1="73.66" x2="152.4" y2="73.66" width="0.1524" layer="91"/>
 <label x="152.4" y="73.66" size="1.016" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
@@ -3551,7 +3544,7 @@ RS485 -&gt; 5TTL</text>
 <label x="180.34" y="76.2" size="1.016" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC8" gate="G$1" pin="(PCINT26/INT0)PD2"/>
+<pinref part="IC8" gate="G$1" pin="(PCINT26/RXD1/INT0)PD2"/>
 <wire x1="137.16" y1="68.58" x2="152.4" y2="68.58" width="0.1524" layer="91"/>
 <label x="152.4" y="68.58" size="1.016" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
@@ -3563,7 +3556,7 @@ RS485 -&gt; 5TTL</text>
 <label x="180.34" y="60.96" size="1.016" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="IC8" gate="G$1" pin="(PCINT27/INT1)PD3"/>
+<pinref part="IC8" gate="G$1" pin="(PCINT27/TXD1/INT1)PD3"/>
 <wire x1="137.16" y1="71.12" x2="152.4" y2="71.12" width="0.1524" layer="91"/>
 <label x="152.4" y="71.12" size="1.016" layer="95" font="vector" ratio="10" xref="yes"/>
 </segment>
