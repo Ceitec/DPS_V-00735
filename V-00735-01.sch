@@ -2231,12 +2231,12 @@ paja@paja-trb.cz
 <devices>
 <device name="" package="PSH02-06P">
 <connects>
-<connect gate="G$1" pin="!RST" pad="5"/>
+<connect gate="G$1" pin="!RST" pad="3"/>
 <connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="MISO" pad="3"/>
+<connect gate="G$1" pin="MISO" pad="5"/>
 <connect gate="G$1" pin="MOSI" pad="6"/>
-<connect gate="G$1" pin="SCK" pad="2"/>
-<connect gate="G$1" pin="VCC" pad="4"/>
+<connect gate="G$1" pin="SCK" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3432,7 +3432,7 @@ Source: www.cypressindustries.com</description>
 <part name="C3" library="#PaJa_31" deviceset="C-KER" device="_0805" value="27nF"/>
 <part name="C4" library="#PaJa_31" deviceset="C-KER" device="_0805" value="27nF"/>
 <part name="D1" library="diode" deviceset="MBRS3*0T3" device="" technology="4"/>
-<part name="IO2" library="#PaJa_31" deviceset="LF_C" device="DT" value="LF50CDT"/>
+<part name="IO2" library="#PaJa_31" deviceset="LF_C" device="DT" value="78M05"/>
 <part name="C5" library="#PaJa_31" deviceset="C-KER" device="_1206" value="10uF"/>
 <part name="C6" library="#PaJa_31" deviceset="C-KER" device="_1206" value="100n"/>
 <part name="U$1" library="#PaJa_konektory" deviceset="AVR_PROG_SPI" device=""/>
@@ -3454,6 +3454,9 @@ Source: www.cypressindustries.com</description>
 <part name="JUM2" library="#PaJa_konektory" deviceset="S1G4_JUMP" device=""/>
 <part name="K1" library="#PaJa_konektory" deviceset="PSH02-04" device="P"/>
 <part name="K2" library="#PaJa_konektory" deviceset="PSH02-02" device="P"/>
+<part name="JUM3" library="#PaJa_konektory" deviceset="S1G3_JUMP" device=""/>
+<part name="R4" library="#PaJa_31" deviceset="R" device="_1206" value="0R"/>
+<part name="R5" library="#PaJa_31" deviceset="R" device="_1206" value="0R"/>
 </parts>
 <sheets>
 <sheet>
@@ -3461,14 +3464,30 @@ Source: www.cypressindustries.com</description>
 <text x="127" y="12.7" size="2.54" layer="94">Ovládání ofuku pres
 RS485 -&gt; 5TTL</text>
 <text x="246.38" y="5.08" size="2.54" layer="94">00</text>
-<text x="165.1" y="139.7" size="1.778" layer="97">Nahradit 78L05-TO92
-Nozky napájet. Bohuzel tento má
-pouze vstup do 16V max.
-Nevsiml jsem si u první verze</text>
+<text x="165.1" y="144.78" size="1.778" layer="97">Nahrazen 78M05 Pouzdro DPAK
+Ten má napájení do 35V
+(Hodne topi, snad vydrzi)</text>
 <wire x1="170.18" y1="149.86" x2="170.18" y2="157.48" width="0.1524" layer="97"/>
 <wire x1="170.18" y1="157.48" x2="172.72" y2="160.02" width="0.1524" layer="97"/>
 <wire x1="172.72" y1="160.02" x2="170.18" y2="160.02" width="0.1524" layer="97"/>
 <wire x1="172.72" y1="160.02" x2="172.72" y2="157.48" width="0.1524" layer="97"/>
+<text x="238.76" y="170.18" size="1.016" layer="97" align="top-left">Spatne jsou
+poznaceny piny
+knihovna je
+spatna</text>
+<text x="154.94" y="99.06" size="1.016" layer="97" ratio="10" align="top-left">Bud se osadí R4 nebo R5 dle toho
+jestli se bude programovat ci
+normalni provoz
+A nebo konektor JUM3
+S Jumperem a necha se pozdeji
+pri normalnim provozu</text>
+<wire x1="154.94" y1="101.6" x2="195.58" y2="101.6" width="0.1524" layer="97"/>
+<wire x1="195.58" y1="101.6" x2="198.12" y2="104.14" width="0.1524" layer="97"/>
+<wire x1="195.58" y1="101.6" x2="198.12" y2="96.52" width="0.1524" layer="97"/>
+<wire x1="198.12" y1="104.14" x2="196.85" y2="104.14" width="0.1524" layer="97"/>
+<wire x1="198.12" y1="104.14" x2="198.12" y2="103.124" width="0.1524" layer="97"/>
+<wire x1="198.12" y1="96.52" x2="197.358" y2="96.52" width="0.1524" layer="97"/>
+<wire x1="198.12" y1="96.52" x2="198.374" y2="97.282" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -3493,12 +3512,15 @@ Nevsiml jsem si u první verze</text>
 <instance part="IO2" gate="IO" x="177.8" y="167.64"/>
 <instance part="C5" gate="C" x="190.5" y="162.56" rot="R90"/>
 <instance part="C6" gate="C" x="165.1" y="162.56" rot="R90"/>
-<instance part="U$1" gate="G$1" x="231.14" y="162.56" rot="R270"/>
+<instance part="U$1" gate="G$1" x="226.06" y="162.56" rot="R270"/>
 <instance part="IC8" gate="G$1" x="111.76" y="106.68"/>
 <instance part="JUM1" gate="JUMP" x="182.88" y="124.46"/>
 <instance part="JUM2" gate="JUMP" x="149.86" y="144.78" rot="R270"/>
 <instance part="K1" gate="KON" x="226.06" y="134.62" rot="R270"/>
 <instance part="K2" gate="KON" x="226.06" y="116.84" rot="R270"/>
+<instance part="JUM3" gate="JUMP" x="226.06" y="99.06" rot="R270"/>
+<instance part="R4" gate="R" x="203.2" y="106.68"/>
+<instance part="R5" gate="R" x="200.66" y="91.44"/>
 </instances>
 <busses>
 </busses>
@@ -3586,20 +3608,6 @@ Nevsiml jsem si u první verze</text>
 <junction x="38.1" y="162.56"/>
 </segment>
 <segment>
-<pinref part="IO2" gate="IO" pin="OUT"/>
-<wire x1="187.96" y1="167.64" x2="190.5" y2="167.64" width="0.1524" layer="91"/>
-<pinref part="C5" gate="C" pin="2"/>
-<wire x1="190.5" y1="167.64" x2="200.66" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="165.1" x2="190.5" y2="167.64" width="0.1524" layer="91"/>
-<junction x="190.5" y="167.64"/>
-<label x="200.66" y="167.64" size="1.016" layer="95" font="vector" ratio="10" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="VCC"/>
-<wire x1="226.06" y1="160.02" x2="218.44" y2="160.02" width="0.1524" layer="91"/>
-<label x="218.44" y="160.02" size="1.016" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="IC8" gate="G$1" pin="VCC@2"/>
 <wire x1="83.82" y1="144.78" x2="81.28" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="144.78" x2="81.28" y2="147.32" width="0.1524" layer="91"/>
@@ -3619,6 +3627,21 @@ Nevsiml jsem si u první verze</text>
 <wire x1="180.34" y1="121.92" x2="180.34" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="119.38" x2="175.26" y2="119.38" width="0.1524" layer="91"/>
 <label x="175.26" y="119.38" size="1.016" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JUM3" gate="JUMP" pin="2"/>
+<wire x1="223.52" y1="99.06" x2="218.44" y2="99.06" width="0.1524" layer="91"/>
+<label x="218.44" y="99.06" size="1.016" layer="95" ratio="10" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R4" gate="R" pin="1"/>
+<wire x1="198.12" y1="106.68" x2="190.5" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="R5" gate="R" pin="1"/>
+<wire x1="190.5" y1="106.68" x2="190.5" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="91.44" x2="195.58" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="106.68" x2="187.96" y2="106.68" width="0.1524" layer="91"/>
+<label x="187.96" y="106.68" size="1.016" layer="95" ratio="10" rot="R180" xref="yes"/>
+<junction x="190.5" y="106.68"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -3667,7 +3690,7 @@ Nevsiml jsem si u první verze</text>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
-<wire x1="226.06" y1="157.48" x2="218.44" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="157.48" x2="218.44" y2="157.48" width="0.1524" layer="91"/>
 <label x="218.44" y="157.48" size="1.016" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 </segment>
 <segment>
@@ -3754,7 +3777,7 @@ Nevsiml jsem si u první verze</text>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="!RST"/>
-<wire x1="226.06" y1="162.56" x2="218.44" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="162.56" x2="218.44" y2="162.56" width="0.1524" layer="91"/>
 <label x="218.44" y="162.56" size="1.016" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 </segment>
 </net>
@@ -3821,7 +3844,7 @@ Nevsiml jsem si u první verze</text>
 <net name="P_MISO" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="MISO"/>
-<wire x1="226.06" y1="167.64" x2="218.44" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="167.64" x2="218.44" y2="167.64" width="0.1524" layer="91"/>
 <label x="218.44" y="167.64" size="1.016" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 </segment>
 <segment>
@@ -3833,7 +3856,7 @@ Nevsiml jsem si u první verze</text>
 <net name="P_SCK" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="SCK"/>
-<wire x1="226.06" y1="165.1" x2="218.44" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="165.1" x2="218.44" y2="165.1" width="0.1524" layer="91"/>
 <label x="218.44" y="165.1" size="1.016" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 </segment>
 <segment>
@@ -3845,7 +3868,7 @@ Nevsiml jsem si u první verze</text>
 <net name="P_MOSI" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="MOSI"/>
-<wire x1="226.06" y1="170.18" x2="218.44" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="170.18" x2="218.44" y2="170.18" width="0.1524" layer="91"/>
 <label x="218.44" y="170.18" size="1.016" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
 </segment>
 <segment>
@@ -3907,6 +3930,44 @@ Nevsiml jsem si u první verze</text>
 <pinref part="IC8" gate="G$1" pin="(PCINT3/ADC3)PA3"/>
 <pinref part="JUM2" gate="JUMP" pin="4"/>
 <wire x1="147.32" y1="139.7" x2="137.16" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+5V_PROG" class="0">
+<segment>
+<pinref part="JUM3" gate="JUMP" pin="1"/>
+<wire x1="223.52" y1="101.6" x2="218.44" y2="101.6" width="0.1524" layer="91"/>
+<label x="218.44" y="101.6" size="1.016" layer="95" ratio="10" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="VCC"/>
+<wire x1="220.98" y1="160.02" x2="218.44" y2="160.02" width="0.1524" layer="91"/>
+<label x="218.44" y="160.02" size="1.016" layer="95" font="vector" ratio="10" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R4" gate="R" pin="2"/>
+<wire x1="208.28" y1="106.68" x2="213.36" y2="106.68" width="0.1524" layer="91"/>
+<label x="213.36" y="106.68" size="1.016" layer="95" ratio="10" xref="yes"/>
+</segment>
+</net>
+<net name="+5V_78X" class="0">
+<segment>
+<pinref part="JUM3" gate="JUMP" pin="3"/>
+<wire x1="223.52" y1="96.52" x2="218.44" y2="96.52" width="0.1524" layer="91"/>
+<label x="218.44" y="96.52" size="1.016" layer="95" ratio="10" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IO2" gate="IO" pin="OUT"/>
+<wire x1="187.96" y1="167.64" x2="190.5" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="C5" gate="C" pin="2"/>
+<wire x1="190.5" y1="167.64" x2="200.66" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="165.1" x2="190.5" y2="167.64" width="0.1524" layer="91"/>
+<junction x="190.5" y="167.64"/>
+<label x="200.66" y="167.64" size="1.016" layer="95" font="vector" ratio="10" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R5" gate="R" pin="2"/>
+<wire x1="205.74" y1="91.44" x2="213.36" y2="91.44" width="0.1524" layer="91"/>
+<label x="213.36" y="91.44" size="1.016" layer="95" ratio="10" xref="yes"/>
 </segment>
 </net>
 </nets>
